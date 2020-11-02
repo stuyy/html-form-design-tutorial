@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form UI</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- Place your Font Awesome Script here -->
+  </head>
+  <body>
+    <div id="form-container">
+      <div id="div-bg"></div>
+      <div id="form-section">
+        <form>
+          <div class="form-group">
+            <div class="form-field" id="username">
+              <div>
+                <i class="fa fa-user"></i>
+              </div>
+              <input
+                type="text"
+                placeholder="Username"
+                onfocus="addBoxShadow('username')"
+                onblur="removeBoxShadow('username')"
+              />
+            </div>
+            <div class="form-field" id="password">
+              <div>
+                <i class="fa fa-lock"></i>
+              </div>
+              <input
+                type="password"
+                placeholder="Password"
+                onfocus="addBoxShadow('password')"
+                onblur="removeBoxShadow('password')"
+              />
+            </div>
+          </div>
+          <div id="forgot-password">
+            <small>Forgot Password?</small>
+          </div>
+          <button type="submit" id="submit-btn">Login</button>
+          <div id="register-text">
+            <small>
+              Don't have an account?
+              <span>Register</span>
+            </small>
+          </div>
+        </form>
+        <div id="icon-container">
+          <div class="icons facebook">
+            <i class="fa fa-facebook"></i>
+          </div>
+          <div class="icons twitter">
+            <i class="fa fa-twitter"></i>
+          </div>
+          <div class="icons google">
+            <i class="fa fa-google"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
